@@ -1,0 +1,1456 @@
+.entry_display {
+  width: 700px;
+  height: 1020;
+  margin: 0;
+  padding: 0px;
+  font-size: 15px;
+  color: #534741; }
+  .entry_display .main_image {
+    margin: 0 25px 0 25px; }
+    .entry_display .main_image img {
+      border: 10px solid #534741; }
+  .entry_display .entry_info {
+    background-color: #ebe2ce;
+    border-top: 1px solid #534741;
+    border-bottom: 1px solid #534741;
+    margin-top: -4px; }
+    .entry_display .entry_info .entry_paragraph {
+      width: 425px;
+      display: block;
+      float: left; }
+      .entry_display .entry_info .entry_paragraph p {
+        font-family: 'Trebuchet MS';
+        border-right: 1px solid #534741;
+        padding: 10px 30px 10px 30px; }
+    .entry_display .entry_info .entry_details {
+      float: right;
+      display: block;
+      margin-right: 30px;
+      font-family: 'Trebuchet MS';
+      padding-top: 10px; }
+      .entry_display .entry_info .entry_details ul {
+        list-style: none;
+        text-decoration: none; }
+        .entry_display .entry_info .entry_details ul li a {
+          font-family: 'MarydaleBlack';
+          text-decoration: none;
+          color: #534741;
+          font-size: 20px;
+          line-height: 40px;
+          font-weight: 200px;
+           }
+        .entry_display .entry_info .entry_details ul li a:hover {
+          color: #9d9072; }
+  .entry_display .entry_generic {
+    background-color: #534741;
+    width: 650px;
+    margin: 0 0 0 25px; }
+    .entry_display .entry_generic .share_with {
+      margin-left: 182px;
+      padding-top: 30px; }
+      .entry_display .entry_generic .share_with h2 {
+        font-family: 'MarydaleBlack';
+        color: #534741;
+        background-image: url("../images/share_with.png");
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 285px;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 28px;
+        margin: 0; }
+      .entry_display .entry_generic .share_with ul {
+        list-style: none;
+        margin: -30px 0 0 0;
+        padding: 0; }
+        .entry_display .entry_generic .share_with ul li a {
+          width: 70px;
+          height: 70px;
+          display: block;
+          float: left; }
+    .entry_display .entry_generic .thing {
+      border-top: 1px solid #ebe2ce;
+      float: left;
+      text-align: center;
+      margin: 30px 20px 0 20px;
+      width: 610px; }
+      .entry_display .entry_generic .thing h3 {
+        font-family: "MarydaleBlack";
+        color: #ebe2ce;
+        font-size: 24px; }
+
+.thing_gallery {
+  padding-top: 50px; }
+  .thing_gallery h1 {
+    font-family: 'MarydaleBlack';
+    color: #534741;
+    text-align: center;
+    font-size: 36px;
+    display: block;
+    height: 60px;
+    padding-top: 25px;
+    width: 900px;
+    margin: 0 55px 0px 55px; }
+  .thing_gallery ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    width: 852px;
+    margin-left: 84px; }
+    .thing_gallery ul li {
+      padding: 0;
+      float: left;
+      margin: 10px 10px 0 0; }
+      .thing_gallery ul li a {
+        text-decoration: none;
+        width: 130px;
+        height: 130px;
+        display: block;
+        border: 1px solid #534741;
+        box-shadow: 2px 2px 2px #534741;
+        color: #ebe2ce; }
+
+.navigation {
+  margin: 20px 0px 0px 0px;
+  text-align: center; }
+  .navigation ul {
+    margin: 0 0 0 285px;
+    padding: 0;
+    list-style: none;
+    width: 450px; }
+    .navigation ul li {
+      margin: 0;
+      padding: 0;
+      float: left;
+      margin-right: 10px; }
+      .navigation ul li a {
+        color: #ebe2ce;
+        text-decoration: none;
+        display: block;
+        background-image: url("../images/button_design_140.png");
+        background-repeat: no-repeat;
+        font-family: 'Trebuchet MS';
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+        width: 140px;
+        height: 31px;
+        padding-top: 14px; }
+      .navigation ul li a:hover {
+        background-image: url("../images/button_design2_140.png");
+        color: #534741; }
+
+.social_sharing {
+  margin: 30px 75px 0px 0;
+  float: right; }
+  .social_sharing h3 {
+    font-family: 'MarydaleBlack';
+    color: #534741;
+    background-image: url("../images/share_with.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 285px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 28px;
+    margin: 0; }
+  .social_sharing ul {
+    list-style: none;
+    margin: -30px 0 0 0;
+    padding: 0; }
+    .social_sharing ul li a {
+      width: 70px;
+      height: 70px;
+      display: block;
+      float: left; }
+
+.things_grid {
+  float: left;
+  /*margin: 0 55px 0 55px;*/ }
+  
+.checklist-thing {
+      list-style: none;
+      float: left;
+      text-decoration: none;
+      font-family: 'Trebuchet MS';
+      display: block;
+	margin: 5px;
+      border: 1px solid #534741;
+      width: 280px;
+      height: 140px;
+      text-align: left;
+      
+      font-size: 14px;
+   
+}
+
+.checklist-thing a.done-thing {
+	background-image: url(../images/checkmark.png);
+	background-repeat: no-repeat;
+	background-position-y: 105px;
+	background-position-x: 240px;
+	
+}
+
+.checklist-thing a:link {
+	display: block;
+      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 260px;
+      height: 120px;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.8em;
+      line-height: 25px;
+    text-shadow: 1px 1px #666;
+
+  }
+  
+  .checklist-thing a span {
+  	font-family: 'MarydaleBlack';
+  	color: #FDD61A;
+  	letter-spacing: 3px;
+  	font-size: 32px;
+  
+  
+  }
+  
+  
+  
+.checklist-thing a:visited {
+	color: white;
+
+}
+  
+.checklist-thing a:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #ededed;
+
+}
+  
+  
+.fb_button {
+	/*float: right;
+	margin-right: 97px;
+	margin-top: 20px;*/
+
+}
+  /** OLD Things Grid, todo: delete, saved for reference only at the moment **/
+/*  
+  .things_grid .selectedDiv {
+    background: #534741;
+    color: #ffd520; }
+  .things_grid a {
+    text-decoration: none;
+    color: #534741;
+    height: 70px;
+    display: block; }
+  .things_grid a:hover {
+    color: #9d9072; }
+  .things_grid .thing_item {
+    margin: -13px 0px 0px -40px;
+    float: left; }
+    .things_grid .thing_item li {
+      list-style: none;
+      text-decoration: none;
+      font-family: 'Trebuchet MS';
+      display: block;
+      background-color: #ebe2ce;
+      background-color: rgba(215, 206, 186, 0.4);
+      border-top: 1px solid #534741;
+      border-left: 1px solid #534741;
+      width: 223px;
+      height: 85px;
+      text-align: left;
+      float: left;
+      font-size: 14px; }
+      .things_grid .thing_item li a {
+        padding: 15px 10px 0 10px; }
+    .things_grid .thing_item .last {
+      border-right: 1px solid #534741; }
+    .things_grid .thing_item .last_row {
+      border-bottom: 1px solid #534741; }
+  .things_grid .more {
+    display: none;
+    background-color: #534741;
+    width: 897px;
+    overflow: auto; }
+    .things_grid .more h1 {
+      font-family: 'MarydaleBlack';
+      color: #ebe2ce;
+      text-align: left;
+      font-size: 30px;
+      margin-left: 15px; }
+    .things_grid .more ul {
+      margin-left: -25px; }
+      .things_grid .more ul li {
+        width: 100px;
+        list-style: none;
+        margin-right: 10px;
+        text-decoration: none;
+        float: left; }
+        .things_grid .more ul li a {
+          display: block;
+          float: left;
+          width: 100px;
+          border: 0; }
+      .things_grid .more ul li.empty {
+        background-image: url("../images/empty.jpg");
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px; }
+    .things_grid .more ul.action_buttons {
+      margin: 0 0 0 200px;
+      list-style: none; }
+      .things_grid .more ul.action_buttons li {
+        width: 210px;
+        margin: 25px 0 25px 0; }
+        .things_grid .more ul.action_buttons li a {
+          background-image: url("../images/button_design.png");
+          background-repeat: no-repeat;
+          display: block;
+          float: left;
+          color: #ebe2ce;
+          width: 210px;
+          height: 31px;
+          margin-right: 10px;
+          text-align: center;
+          padding-top: 14px;
+          font-family: 'Trebuchet MS';
+          font-size: 15px;
+          text-transform: uppercase;
+          text-decoration: none; }
+        .things_grid .more ul.action_buttons li a:hover {
+          background-image: url("../images/button_design_pressed.png");
+          color: #534741;
+          background-repeat: no-repeat; }
+        .things_grid .more ul.action_buttons li a:hover.submit {
+          background-image: url("../images/button_design_pressed.png");
+          color: #534741;
+          background-repeat: no-repeat; }
+        .things_grid .more ul.action_buttons li a.submit {
+          background-image: url("../images/button_design_submit.png");
+          color: #534741;
+          background-repeat: no-repeat;
+          font-size: 18px; }
+*/
+.things_grid_end {
+	clear: both;
+ }
+
+#secondary_page_content {
+  background-image: url("../images/container_paper2.jpg");
+  background-repeat: repeat-y;
+  padding-top: 180px;
+  width: 1010px;
+  margin: auto; }
+  #secondary_page_content #secondary_content_container {
+    margin: 55px 55px 0 55px; }
+    #secondary_page_content #secondary_content_container img.feature_image {
+      border: 3px solid #ebe2ce;
+      margin: 0 0 0 50px; }
+  #secondary_page_content #social_media {
+    margin: 100px 10px 0 -45px;
+    float: left;
+    width: 70px;
+    padding: 0px; }
+    #secondary_page_content #social_media ul.social_media_list {
+      list-style: none;
+      float: left; }
+  #secondary_page_content .item_headline {
+    background-image: url("../images/item_headlinebox.png");
+    background-repeat: no-repeat;
+    margin: -80px 0 0 0;
+    padding: 45px 0 0 0;
+    width: 912px;
+    height: 105px;
+    position: relative;
+    z-index: 100; }
+    #secondary_page_content .item_headline h1 {
+      font-family: 'MarydaleBlack';
+      font-size: 28px;
+      color: #534741;
+      text-align: center; }
+    #secondary_page_content .item_headline strong {
+      text-transform: uppercase; }
+  #secondary_page_content .info_section {
+    width: 665px;
+    margin: auto;
+    margin-top: -30px;
+    padding: 40px 30px 0 30px;
+    background-color: #534741;
+    color: #ebe2ce;
+    border: 3px solid #ebe2ce;
+    font-family: 'Trebuchet MS';
+    font-size: 17px; }
+    #secondary_page_content .info_section h2 {
+      font-family: 'MarydaleBlack';
+      font-size: 28px; }
+      #secondary_page_content .info_section h2 a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #ebe2ce; }
+      #secondary_page_content .info_section h2 a:hover {
+        color: #9d9072; }
+    #secondary_page_content .info_section .allphotos a {
+      text-decoration: none; }
+    #secondary_page_content .info_section .allphotos span.photo_arrow_left {
+      background-image: url("../images/item_button.png");
+      background-repeat: no-repeat;
+      font-family: 'MarydaleBlack';
+      color: #534741;
+      display: block;
+      font-size: 40px;
+      float: left;
+      width: 45px;
+      height: 50px;
+      margin: 28px 30px 0 20px;
+      padding: 20px 0 0 25px; }
+    #secondary_page_content .info_section .allphotos a:hover span.photo_arrow_left {
+      color: #9d9072; }
+    #secondary_page_content .info_section .allphotos span.photo_arrow_right {
+      background-image: url("../images/item_button.png");
+      background-repeat: no-repeat;
+      font-family: 'MarydaleBlack';
+      color: #534741;
+      display: block;
+      font-size: 40px;
+      float: left;
+      width: 45px;
+      height: 50px;
+      margin-top: 28px;
+      margin-left: 15px;
+      padding: 20px 0 0 25px; }
+    #secondary_page_content .info_section .allphotos a:hover span.photo_arrow_right {
+      color: #9d9072; }
+    #secondary_page_content .info_section .allphotos h2 {
+      margin: 50px 0 15px 0; }
+    #secondary_page_content .info_section .allphotos ul li {
+      list-style: none;
+      float: left;
+      margin: 0px 20px 30px 0px;
+      padding: 0;
+      width: 125px;
+      height: 125px; }
+      #secondary_page_content .info_section .allphotos ul li img {
+        border: 3px solid #ebe2ce; }
+  #secondary_page_content .next_page {
+    font-size: 24px;
+    font-family: 'MarydaleBlack';
+    text-align: center;
+    margin: 50px 0 0 250px; }
+    #secondary_page_content .next_page a {
+      display: block;
+      float: left;
+      text-decoration: none;
+      color: #534741; }
+    #secondary_page_content .next_page span.left {
+      float: left;
+      display: block;
+      width: 28px;
+      padding-top: 13px; }
+    #secondary_page_content .next_page span.back_number {
+      float: left;
+      display: block;
+      background-image: url("../images/brown_button.png");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 27px;
+      color: #ebe2ce;
+      padding-top: 13px; }
+    #secondary_page_content .next_page a:hover span.back_number {
+      color: #9d9072; }
+    #secondary_page_content .next_page span.back {
+      float: left;
+      display: block;
+      width: 80px;
+      padding-top: 13px; }
+    #secondary_page_content .next_page span.home {
+      float: left;
+      display: block;
+      padding-top: 0px;
+      margin: 0 20px 0 20px; }
+    #secondary_page_content .next_page span.next {
+      float: left;
+      display: block;
+      width: 80px;
+      padding-top: 13px; }
+    #secondary_page_content .next_page span.next_number {
+      float: left;
+      display: block;
+      background-image: url("../images/brown_button.png");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 27px;
+      color: #ebe2ce;
+      padding-top: 13px; }
+    #secondary_page_content .next_page a:hover span.next_number {
+      color: #9d9072; }
+    #secondary_page_content .next_page span.right {
+      float: left;
+      display: block;
+      width: 28px;
+      padding-top: 13px; }
+    #secondary_page_content .next_page strong {
+      text-transform: uppercase;
+      background-image: none;
+      display: block;
+      float: left;
+      padding-top: 13px; }
+    #secondary_page_content .next_page a:hover {
+      color: #ebe2ce; }
+  #secondary_page_content .things_grid_end {
+    height: 70px;
+    background-image: url("../images/container_paper_end.jpg");
+    background-repeat: no-repeat;
+    width: 1010px; }
+
+/* @license
+ * MyFonts Webfont Build ID 1473856, 2011-11-07T15:34:01-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Marydale Black by Three Islands Press
+ * URL: http://www.myfonts.com/fonts/3ip/marydale/black/
+ * Copyright: &#x00A9;1993, 2002, 2006 by Brian Willson, d.b.a. Three Islands Press (3IP), Rockland ME USA (www.3ip.com). All rights reserved worldwide. Marydale is a trademark of Brian Willson/3IP.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=1473856
+ * 
+ * © 2011 Bitstream Inc
+*/
+@font-face {
+  font-family: 'MarydaleBlack';
+  src: url("../fonts/167D40_0.eot");
+  src: url("../fonts/167D40_0.eot?#iefix") format("embedded-opentype"), url("../fonts/167D40_0.woff") format("woff"), url("../fonts/167D40_0.ttf") format("truetype"), url("../fonts/167D40_0.svg#wf") format("svg"); }
+
+#footer_paper {
+  background-image: url("../images/footer_paper.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  padding: 0;
+  height: 15px;
+  /*margin-top: 100px;*/ }
+  
+.footer_about{
+	width: 400px;
+	float: left;
+	
+}
+
+.footer_about p {
+	margin: 0;
+	
+}
+#footer {
+  width: 100%;
+  background-color: #534741;
+  border-top: 3px solid #9d9072;
+  padding-bottom: 50px; }
+  #footer #footer_container {
+    width: 980px;
+    padding-top: 30px;
+    margin: auto;
+    font-family: "Trebuchet MS";
+    color: #ebe2ce;
+    font-size: 14px; }
+    #footer #footer_container img {
+      margin-bottom: 10px;
+      height: 60px; }
+    #footer #footer_container a {
+      text-decoration: none;
+      color: #ebe2ce;
+      list-style: none; }
+    #footer #footer_container .logo {
+      float: left;
+      margin-right: 30px;
+      width: 298;
+      border-right: 1px solid #9d9072;
+      padding-right: 20px;
+      height: 135px; }
+      #footer #footer_container .logo p2 {
+        line-height: 24px;
+        text-align: center; }
+        #footer #footer_container .logo p2 a:hover {
+          color: #ffd520; }
+    #footer #footer_container .nav {
+      float: right;
+      text-transform: uppercase; }
+      #footer #footer_container .nav li {
+        display: block;
+        padding: 10px;
+        background-color: #645855;
+        float: left;
+        border: 1px solid #9d9072;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        margin-left: 20px;
+        height: 19px; }
+        #footer #footer_container .nav li img.fb {
+          height: 25px;
+          float: left;
+          margin: -3px 6px 0 0; }
+      #footer #footer_container .nav li:hover {
+        background-color: #9d9072; }
+
+
+
+#recent_upload_pics {
+  float: left;
+ /* margin-left: -35px; */
+ /* margin-top: -30px;*/
+   }
+  #recent_upload_pics .recent_pics li {
+    list-style: none;
+    float: left; }
+    #recent_upload_pics .recent_pics li img {
+      border: 1px solid #534741;
+      margin-right: 15px;
+      box-shadow: 2px 2px 2px #534741; }
+#recent_upload_pics h2, .all-things-label{
+	color: white;
+	font-family: 'MarydaleBlack';
+	font-size: 42px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	text-shadow: 1px 1px #666;
+
+	
+}
+
+.recent_pics {
+	width: 450px;
+	padding-left: 0;
+	margin-top: -10px
+	
+}
+
+#ipad_contest {
+  float: left;
+  margin-top: 35px;
+   }
+  #ipad_contest h2 {
+    font-size: 18px;
+    font-family: 'Trebuchet MS';
+    text-align: center; }
+    #ipad_contest h2 a {
+      text-decoration: none;
+      color: #534741;
+      display: block;
+      width: 385px;
+      height: 115px;
+      /*margin-left: 55px;*/
+      padding: 50px 0 0 50px;
+      background-image: url("../images/ipadimg.png");
+      background-repeat: no-repeat; }
+      #ipad_contest h2 a strong {
+        text-transform: uppercase;
+        font-size: 24px; }
+    #ipad_contest h2 a:hover {
+      background-image: url("../images/ipadimg2.png"); }
+
+body {
+  background-image: url("../images/background.jpg"); }
+
+body#popup {
+  background-image: none; }
+
+#page_content {
+ /* background-image: url("../images/container_paper2.jpg");*/
+  background-repeat: repeat-y;
+  padding-top: 210px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 930px;
+  margin: auto;
+ 
+  /*min-height: 1200px;*/
+   }
+  #page_content #feature {
+    /*margin: 20px 55px 0px 55px;*/ }
+    #page_content #feature img {
+      /*margin-top: 30px;*/
+      width: 400px;
+      float: left;
+      border: 10px solid #534741; }
+    #page_content #feature #feature_text {
+      float: left;
+      width: 444px;
+      min-height: 285px;
+
+     border-top: 1px solid #534741;
+      border-bottom: 1px solid #534741;
+      border-right: 1px solid #534741;
+      
+      background-color: #d7ceba;
+      background-image: url(../images/caption_background.jpg);
+      padding: 20px;
+      margin-top: 45px;
+      margin-bottom: 40px;
+      font-family: 'Trebuchet MS';
+      font-size: 24px; 
+      }
+      
+      .caption {
+
+	      
+      }
+      
+      #page_content #feature #feature_text h2{
+        font-family: 'MarydaleBlack';
+        color: #534741;
+        font-size: 38px;
+        margin: 10px 0;
+         }
+        
+       #page_content #feature #feature_text.individual-submission {
+	        font-size: 24px;
+	        
+	        
+        }
+     
+     .single-page-content {
+	     color: #f7ede7;
+	     
+     }
+     
+
+        
+	#feature_text h2 a {
+		text-decoration: none;
+		color: white;
+		text-shadow: 1px 1px #666;
+
+	}
+	
+	#feature_text h2 a span{
+		color: #FDD61A;
+		
+		
+	}
+        
+     
+     
+        
+      
+      #page_content #feature #feature_text p {
+        color: #534741;
+        margin: 10px 0; }
+      #page_content #feature #feature_text .more_button {
+        margin-left: -60px;
+        margin-top: 60px; }
+        #page_content #feature #feature_text .more_button li {
+          list-style: none;
+          padding: 0;
+          float: left;
+          margin-left: 5px; }
+          #page_content #feature #feature_text .more_button li a {
+            float: left;
+            text-decoration: none;
+            color: #ebe2ce;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Trebuchet MS';
+            text-transform: uppercase;
+            width: 140px;
+            height: 33px;
+            display: block;
+            padding-top: 12px;
+            background-image: url("../images/button_design_140.png");
+            background-repeat: no-repeat; }
+          #page_content #feature #feature_text .more_button li a:hover {
+            background-image: url("../images/button_design2_140.png");
+            color: #534741; }
+            
+        #page_content #Content h2 span {
+        	color: #FDD61A;
+        	margin-right: 10px;
+        	
+        
+        
+        }
+		#page_content #Content h2 {
+			font-family: 'MarydaleBlack';
+        	color: white;
+        	font-size: 58px;		
+			text-shadow: 1px 1px #666;
+			margin-top: 15px;
+			margin-bottom: -20px;
+			font-weight: normal;
+		}
+		
+		#submissions-container {
+			margin-top: 25px;
+			
+			
+		}
+		
+		#submissions {
+			padding: 25px;
+			background-color: #3a322d;
+			box-shadow:inset 0 0 10px #000000;
+			border-radius: 6px;
+			margin: 10px 0;
+			
+		}
+		
+		#submissions ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		
+		}
+		
+		#submissions li img {
+		
+		}
+		
+		#submissions ul li{
+			margin: 4px;
+			float: left;
+
+		
+		}
+		
+		#submissions ul li a.enter-yours-button {
+			padding: 5px;
+			height: 126px;
+			width: 128px;
+
+		}
+		#submissions ul li a.enter-yours-button span{
+			margin-top: 30px;
+			display: block;
+		
+		}
+		
+		#submissions ul li a {
+			color: white;
+			font-family: 'MarydaleBlack';
+			font-size: 18px;
+			text-decoration: none;
+			text-align: center;
+			background: #645855;
+			border-radius: 7px;
+			border: 1px solid #a6a090;
+			margin: 0;
+			padding: 3px;
+			width: 130px;
+			height: 130px;
+			display: block;
+		
+		
+		}
+		
+		#page_content #Content h3 {
+			font-family: 'MarydaleBlack';
+			color: #FAF4E3;
+			margin: 10px 0;
+			text-shadow: 1px 1px #666;
+		
+		}
+		
+		#page_content #Content {
+			font-family: 'Trebuchet MS';
+			font-size: 26px;
+			color: #534741;
+		}
+		
+		.caption {
+			font-size: 26px;
+			text-shadow: 1px 0px 0px rgba(230, 219, 197, 1);
+			
+
+		}
+		
+		p.submitter-name {
+			float: right;
+			
+		}
+		
+		
+		
+		.clear {
+			clear: both;
+		}
+
+/* In-content nav */
+
+#content-nav {
+	/*background-color: #867468;
+	box-shadow:inset 0 0 10px #4b413a;
+	border-radius: 6px;	*/
+	margin: 10px 0;
+	
+}
+
+#content-nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#content-nav ul li {
+	list-style-type: none;
+	float: left;
+	
+}
+
+#content-nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #645855;
+    border: 1px solid #bba59f;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    margin-right: 5px;
+    min-height: 19px; 
+    font-family: "Trebuchet MS";
+    color: #ebe2ce;
+    font-size: 18px;
+   /* width: 100px;*/
+    text-align: center;
+    text-decoration: none;		
+	
+}
+
+.nav-button:visited {
+	color: #EBE2CE;
+
+}
+
+.nav-button {
+    display: block;
+    padding: 10px;
+    background-color: #645855;
+    border: 1px solid #bba59f;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 10px 5px;
+    min-height: 19px; 
+    font-family: "Trebuchet MS";
+    color: #ebe2ce;
+    font-size: 18px;
+   /* width: 100px;*/
+    text-align: center;
+    text-decoration: none;
+}
+
+#submission-nav {
+	 margin-top: 20px;
+	 position: absolute;
+
+	
+}
+
+.facebook-nav{
+	font-size: 16px;
+	float: left;
+	background: #3B5998;
+	color: white;
+	font-family: 'Lucida Grande', 'Helvetica', 'Tahoma' sans;
+	text-decoration: none;
+	-moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #BBA59F;
+    display: block;
+   
+}
+
+.report-button{
+	display: block;
+	float: right;   
+	font-size: 16px;
+	padding: 10px;
+	/*color: #534741;*/
+	text-decoration: none;
+   }
+
+.fb_button {
+	display: block;
+	margin-top: 10px;
+	font-family: "Trebuchet MS", sans !important;
+	float: right;
+	
+}
+
+
+.fancybox-wrap {
+	border: 1px solid #BBA59F;	
+	
+}
+/* Checklist page */
+
+		
+#checklist-container {
+	padding: 25px;
+	background-color: #3a322d;
+	box-shadow:inset 0 0 10px #000000;
+	border-radius: 6px;
+	margin: 10px 0;
+	min-height: 100px;
+	
+}
+
+#checklist-submissions ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#checklist-submissions li img {
+
+}
+
+#checklist-submissions ul li{
+	margin: 4px;
+	float: left;
+
+
+}
+
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231; }
+
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+/* 
+ * These selection declarations have to be separate
+ * No text-shadow: twitter.com/miketaylr/status/12228805301
+ * Also: hot pink!
+ */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #00e; }
+
+a:visited {
+  color: #551a8b; }
+
+a:focus {
+  outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+  outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+small {
+  font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Improve image quality when scaled in IE7
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/*
+ * Correct overflow displayed oddly in IE9 
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form {
+  margin: 0; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box; }
+
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* 
+ * Remove inner padding and border in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* Remove default vertical scrollbar in IE6/7/8/9 */
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd; }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#page_header {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-image: url("../images/whitecrinklepaper.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 218px; }
+  #page_header #header_container {
+    margin: auto;
+    padding: 0px;
+    width: 1080px; }
+    #page_header #header_container h1 {
+      margin: 0;
+      padding: 0;
+      width: 1080px;
+      height: 0;
+      padding-top: 196px;
+      overflow: hidden;
+      background-image: url("../images/header_img.png");
+      background-repeat: no-repeat; }
+    #page_header #header_container .facebook_connect {
+      font-family: 'Trebuchet MS';
+      float: right;
+      font-size: 10px;
+      /*margin: -70px 35px 0 0;*/ }
+      #page_header #header_container .facebook_connect a {
+        text-decoration: none;
+        color: #ebe2ce;
+        background-image: url("../images/fb_connect.png");
+        background-repeat: no-repeat;
+        width: 177px;
+        height: 31px;
+        display: block;
+        padding: 15px 0 0 45px; }
+      #page_header #header_container .facebook_connect a:hover {
+        background-image: url("../images/fb_connect2.png");
+        background-repeat: no-repeat; }
+
+/* All styles go before helper */
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+.ir br {
+  display: none; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* =============================================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */ }
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */ }
+/* =============================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }
+.fb_iframe_widget {
+	margin-top: 12px;
+	
+}
