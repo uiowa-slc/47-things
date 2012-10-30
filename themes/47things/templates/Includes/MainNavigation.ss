@@ -9,7 +9,7 @@
 				<li><a href="{$BaseHref}#checklist">view your checklist</a></li>
 			<% else %>
 				<fb:login-button size="xlarge"
-                 onlogin="Log.info('onlogin callback')" scope="$Top.FacebookPermissions" on-login="top.location = '{$BaseHref}/checklist/'; ">
+                 onlogin="Log.info('onlogin callback')" scope="$Top.FacebookPermissions" on-login="top.location = '{$BaseHref}#checklist'; ">
 	                 Sign in to see your checklist!
                  </fb:login-button>
 

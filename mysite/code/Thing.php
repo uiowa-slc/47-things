@@ -87,6 +87,8 @@ class Thing_Controller extends Page_Controller {
 		public function currentMemberHasThing(){
 		
 			$member = Member::currentUser();
+			
+			if($member){
 			$components = $member->getComponents("ThingSubmissions");
 			$thing = $components->find("ThingID",$this->ID);
 			
@@ -94,7 +96,10 @@ class Thing_Controller extends Page_Controller {
 			//print_r($thing);
 			
 			if($thing){return $thing;} else {return false;}
-		
+			}else{
+				return false;
+				
+			}
 		
 		}
 		
