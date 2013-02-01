@@ -7,6 +7,7 @@ html {
 	
 }
 
+p{ text-align: center; margin: 0.1em 0;}
 body {
 	background: #3A322D;
 	font-family: 'TrebuchetMS';
@@ -43,9 +44,9 @@ h1 {
 
 fieldset>div {
 	
-	border-bottom: 1px solid #5e5350;
+	/*border-bottom: 1px solid #5e5350;
 	margin: 10px 0;
-	padding: 10px 0;
+	padding: 10px 0;*/
 	
 }
 
@@ -123,22 +124,23 @@ p a {
 /* Most image cropping form stuff here */
 
 .crop-info {
-	width: 100%;
+	width: 510px;
+	margin: auto;
 	
 }
 
 .jcrop-holder {
-	float: left;
+	margin: auto;
+	text-align: center;
 	
 }
 
 .image-crop-container {
 	width: 400px;
-	float: left;
+	margin: auto;
 }
 
 .replace-image-container {
-	width: 300px;
 	float: left;
 	
 }
@@ -162,9 +164,39 @@ p a {
     float: left;
 }
 
-.close-button {
-	margin-left: 12px;
+.edit-button:active {
+	background: #847470;
 	
+}
+
+#save-cropped-button {
+	display: none;
+}
+
+.reset-button{
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+	min-height: intrinsic;
+
+}
+
+#close-button {
+	background: #59644e;
+}
+
+.secondary-actions{
+	width: 540px;
+}
+
+.reset-button {
+	float: left;
+}
+
+.close-button {
+	float: right;
 }
 
 .image-crop-container{
@@ -174,7 +206,7 @@ p a {
 }
 
 #Form_ReplaceImageForm {
-	margin-left: 10px;
+	/*margin-left: 10px;*/ 
 	
 }
 
@@ -188,10 +220,15 @@ p a {
 	
 }
 
+#Form_ReplaceImageForm #Image label {
+	display: none;
+}
 
+#Form_ReplaceImageForm_Image{
+	display: none;
+}
 
-.edit-button:active {
-	background: #847470;
-	
+#Form_ReplaceImageForm_Image label{
+	display: none;
 }
 

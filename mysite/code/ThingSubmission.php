@@ -121,7 +121,7 @@ class ThingSubmission_Controller extends Page_Controller {
 		
 		$image->write();
 		
-		Director::redirect($this->Link.'/CropImage/');
+		Director::redirect($this->Link.'CropImage');
 		//print_r($imageID);
 	
 		}else {
@@ -139,10 +139,10 @@ class ThingSubmission_Controller extends Page_Controller {
 		
 		//TODO: Be sure to check image ownership before actually rotating/cropping it.
 		
-		if($image->Rotation){
-			$image->Rotation = $image->Rotation+90;
+		if($image->hasRotationInfo()){
+			$image->Rotation = $image->Rotation+270;
 		}else{
-			$image->Rotation = 90;
+			$image->Rotation = 270;
 		}
 		
 		//delete older cached/cropped images

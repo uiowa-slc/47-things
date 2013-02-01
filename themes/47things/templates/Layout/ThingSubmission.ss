@@ -24,10 +24,10 @@
 						<% include Caption %>
 					<div id="submission-nav">
 					<a class="nav-button facebook-nav"href="https://www.facebook.com/sharer.php?u=$Thing.AbsoluteLink&t=$Thing.Title">share this on facebook!</a>
-				<%-- <a class="report-button nav-button" href="{$Link}/FlagSubmission">flag this as inappropriate</a> --%>
+				<%-- <a class="report-button nav-button" href="{$Link}FlagSubmission">flag this as inappropriate</a> --%>
 				
 					<% if CurrentUserOwnsSubmission %>
-					<a class="report-button nav-button fancybox" href="{$Link}/CropImage/">edit or replace this photo</a>
+					<a class="report-button nav-button fancybox" href="{$Link}CropImage">edit or replace this photo</a>
 					<% end_if %>
 				</div>
 

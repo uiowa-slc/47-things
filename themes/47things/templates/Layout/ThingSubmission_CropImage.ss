@@ -21,14 +21,67 @@
         
 		<script language="Javascript">
 
-			$(function(){
+			$(document).ready(function(){
 
-				$('#cropbox').Jcrop({
-					aspectRatio: 1,
-					onSelect: updateCoords
+
+		        // The variable jcrop_api will hold a reference to the
+		        // Jcrop API once Jcrop is instantiated.
+		        var jcrop_api;
+		
+		        // In this example, since Jcrop may be attached or detached
+		        // at the whim of the user, I've wrapped the call into a function
+		        initJcrop();
+		        
+		        function getDimensions(){
+		        	alert( Math.round($('#cropbox').width() / 2));
+		        	
+				  return [
+				    Math.round($('#cropbox').width() / 2),
+				    Math.round($('#cropbox').height()/2),
+				    Math.round($('#cropbox').width()/ 4),
+				    Math.round($('#cropbox').height()/4)
+				  ];
+				}
+			       
+				function initJcrop(){
+				
+					<% if Image.hasCroppingInfo %>
+						var x = {$Image.CroppedX};
+						var y = {$Image.CroppedY};
+						var x2 = {$Image.CroppedX} + {$Image.CroppedW};
+						var y2 = {$Image.CroppedY} + {$Image.CroppedH};
+					<% else %>
+						var x = 0;
+						var y = 0;
+						var x2 = 400;
+						var y2 = 400;					
+					
+					<% end_if %>
+
+				
+					$('#cropbox').Jcrop({
+						aspectRatio: 1,
+						onSelect: updateCoords,
+						setSelect:   [ x, y, x2, y2 ],
+						bgOpacity:   0.2,
+					});
+					
+				}
+		
+				
+				
+				$('#Form_ReplaceImageForm_action_doReplaceImage').click(function(){
+					$('#Form_ReplaceImageForm_Image').click();
+				});
+				
+				$('#close-button').click(function(){
+					$('#save-cropped-button').click();
 				});
 
+
 			});
+			
+		
 			
 		function updateCoords(c)
 			{
@@ -52,29 +105,6 @@
 <body>
 	<h1>Crop your photo</h1>
 	<p>Highlight the area of the photo you'd like to crop. You can also rotate or replace the image using the tools below.</p>
-			<div class="crop-info">
-			<form action="{$Link}doCrop" method="post" onsubmit="return checkCoords();">
-				<input type="hidden" id="x" name="x" />
-				<input type="hidden" id="y" name="y" />
-				<input type="hidden" id="w" name="w" />
-				<input type="hidden" id="h" name="h" />
-				<input type="hidden" id="imageID" name="imageID" value="$Image.ID" />
-				<input type="submit" class="edit-button" value="Crop Image" onClick="/*parent.$.fancybox.close();*/" />
-			</form>
-			
-			<form action="{$Link}doRotateClockwise" method="post" onsubmit="">
-				<input type="hidden" id="clockwiseDegrees" name="clockwiseDegrees" value="90" />
-				<input type="hidden" id="clockwiseImageID" name="clockwiseImageID" value="$Image.ID" />
-				<input type="submit" class="edit-button" value="Rotate Clockwise" onClick="" />
-			</form>
-			
-			<form action="{$Link}doResetCropping" method="post" onsubmit="">
-				<input type="hidden" id="clockwiseImageID" name="clockwiseImageID" value="$Image.ID" />
-				<input type="submit" class="edit-button" value="Reset all cropping/rotation" onClick="" />
-			</form>
-
-		</div>
-		<div class="clear"></div>
 	<div class="image-crop-container">
 	<!--
 		<% if CurrentUserOwnsSubmission %>
@@ -83,8 +113,9 @@
 			<p>this isn't your image</p>
 		<% end_if %>
 		-->
-	<% if Image.hasRotationOrCroppingInfo %>
-		<% control Image.CroppedVersion %>
+
+		<% if Image.hasRotationInfo %>
+		<% control Image.Rotated %>
 			<img src="$URL" id="cropbox" />
 		<% end_control %>
 
@@ -93,21 +124,44 @@
 			<img src="$URL" id="cropbox" />
 		<% end_control %>
 	<% end_if %>
-
 		
 
 		
 	</div>
-	
-	<div class="replace-image-container">
-		$ReplaceImageForm
-	
+			<div class="clear"></div>
+			<div class="crop-info">
+			<form action="{$Link}doCrop" method="post" onsubmit="return checkCoords();">
+				<input type="hidden" id="x" name="x" />
+				<input type="hidden" id="y" name="y" />
+				<input type="hidden" id="w" name="w" />
+				<input type="hidden" id="h" name="h" />
+				<input type="hidden" id="imageID" name="imageID" value="$Image.ID" />
+				<input type="submit" id="save-cropped-button" value="Save Cropped Image" onClick="/*parent.$.fancybox.close();*/" />
+			</form>
+			
+			<form action="{$Link}doRotateClockwise" method="post" onsubmit="">
+				<input type="hidden" id="clockwiseDegrees" name="clockwiseDegrees" value="90" />
+				<input type="hidden" id="clockwiseImageID" name="clockwiseImageID" value="$Image.ID" />
+				<input type="submit" class="edit-button" value="Rotate Clockwise" onClick="" />
+			</form>
+		<div class="replace-image-container">
+			$ReplaceImageForm
+		</div>	
+		<a class="edit-button" id="close-button" href="#" onClick="parent.jQuery.fancybox.close();" >
+			Save and Close
+		</a>
+		<div class="clear"></div>	
+		
+		<div class="secondary-actions">
+			<form action="{$Link}doResetCropping" method="post" onsubmit="">
+				<input type="hidden" id="clockwiseImageID" name="clockwiseImageID" value="$Image.ID" />
+				<input type="submit" class="edit-button reset-button" value="Reset all cropping/rotation" onClick="" />
+			</form>
+
+			<div class="clear"></div>
+		</div>
+		
 	</div>
-	<a class="edit-button close-button" href="#" onClick="parent.jQuery.fancybox.close();">
-		Close This
-	</a>
-	<div class="clear"></div>
-	
 
 
 </body>

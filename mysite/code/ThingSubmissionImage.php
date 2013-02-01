@@ -11,7 +11,26 @@ class ThingSubmissionImage extends Image {
 	
 	);
 	
+	public static $allowed_actions =
+		array( 
+			"generateRotated",
+			"hasCroppingInfo",
+			"hasRotationInfo",
+			"hasRotationOrCroppingInfo"
+			
+		);
 	
+		
+	public function generateRotated(GD $gd) {
+		//print_r("DFAADSFDSFA");
+		$degrees = $this->Rotation;
+		//print_r($degrees);
+
+		$rotatedImage = $gd->resizeByWidth(400);
+		$rotatedImage = $rotatedImage->rotate($degrees);
+        return $rotatedImage;
+    }	
+    
 	public function generateCroppedVersion(GD $gd){
 	
 		$croppedWidthImage = $gd->resizeByWidth(400);
@@ -68,9 +87,6 @@ class ThingSubmissionImage extends Image {
 		
 	}
 
-		
-	public function generateRotated(GD $gd, $degrees) {
-        return $gd->rotate($degrees);
-    }
+
 
 }

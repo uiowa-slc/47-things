@@ -16,11 +16,6 @@
 					$Content
 				<% end_if %>
 					<% include Caption %>
-		<!--<ul class="more_button">
-			<li><a href="http://localhost:8888/secondary.php">More from User</a></li>
-			<li><a href="#">More of #15</a></li>
-			<li><a href="#">All Recent</a></li>
-		</ul>-->
 		</div>
 
 		<% end_control %>
