@@ -19,13 +19,8 @@
 
 <div id="form-container">
 	<h1>Submit your photo for a chance to win the new iPad!</h1>
-	
-
-
 	$Form
 	<div class="clear"></div>
-
-
 </div>
 
 

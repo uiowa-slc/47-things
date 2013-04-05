@@ -5,7 +5,8 @@ class ThingSubmission extends Page {
 		"Caption" => "Text",
 		"SubmitterGrade" => "Text",
 		"SubmitterUiowaEmail" => "Text",
-		"CoverImage" => "Boolean"
+		"CoverImage" => "Boolean",
+		"Flagged" => "Boolean"
 	);
 
 	public static $has_one = array(
@@ -20,7 +21,7 @@ class ThingSubmission extends Page {
 		$fields->removeFieldFromTab("Root.Content.Main","Content");
 		
 		$fields->addFieldToTab('Root.Content.Main', new CheckboxField('CoverImage', 'Is this submission allowed to be a cover photo?'));
-		
+		$fields->addFieldToTab('Root.Content.Main', new CheckboxField('Flagged', 'If checked, this submission has been flagged as inappropriate. Uncheck to unflag it.'));		
 		//$uploadField = new JcropImageUploadField('Image');
        // $uploadField->uploadFolder = 'submissions';
        // $uploadField->setAspectRatio(4/3);
@@ -140,9 +141,9 @@ class ThingSubmission_Controller extends Page_Controller {
 		//TODO: Be sure to check image ownership before actually rotating/cropping it.
 		
 		if($image->hasRotationInfo()){
-			$image->Rotation = $image->Rotation+270;
+			$image->Rotation = $image->Rotation-90;
 		}else{
-			$image->Rotation = 270;
+			$image->Rotation = -90;
 		}
 		
 		//delete older cached/cropped images
@@ -173,17 +174,27 @@ class ThingSubmission_Controller extends Page_Controller {
 	}
 	
 	public function FlagSubmission(){
+	
+
+		/* if this has been flagged before, let's not send a bunch of emails */
+		if($this->Flagged == false){		
+			$from = "47 Things";
+			//$to = "imu-web@uiowa.edu; dustin-quam@uiowa.edu";
+			$to = "dustin-quam@uiowa.edu";
+			$subject = "A Submission has been flagged";
+			$body = 'Someone flagged a 47 Thing submission, <a href="'.$this->AbsoluteLink.'">located here</a>. <a href="http://47things.uiowa.edu/admin/show/'.$this->ID.'">Delete it here.</a>';
 				
-		$from = "47 Things";
-		//$to = "imu-web@uiowa.edu; dustin-quam@uiowa.edu";
-		$to = "dustin-quam@uiowa.edu";
-		$subject = "A Submission has been flagged";
-		$body = 'Someone flagged a 47 Thing submission, <a href="'.$this->AbsoluteLink.'">located here</a>. <a href="http://47things.uiowa.edu/admin/show/'.$this->ID.'">Delete it here.</a>';
+			$email = new Email($from, $to, $subject, $body);
 			
-		$email = new Email($from, $to, $subject, $body);
-		
-		
-		$email->send();
+			
+			$email->send();
+			
+					
+					
+			$this->Flagged = true;
+			$this->write();
+			
+		}
 		
 		Director::redirect($this->Link.'?flagged=1');
 		
@@ -221,6 +232,8 @@ class ThingSubmission_Controller extends Page_Controller {
 		$entry = DataObject::get_by_id("ThingSubmission", $this->ID);
 		//print_r($this);
 		$form->saveInto($entry);
+		
+		$entry->Flagged = false;
 		
 		$entry->writeToStage("Stage");
 		$entry->publish("Stage","Live");

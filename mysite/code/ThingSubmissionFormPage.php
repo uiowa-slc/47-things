@@ -64,7 +64,7 @@ class ThingSubmissionFormPage_Controller extends Page_Controller {
 			$nameLabel = new LiteralField("MemberName", "First Name: Unknown");
 		}
 		
-		$termsLabel = new LiteralField("Terms", '<p>Before submitting your photo, please read our <a href="/terms-and-rules/" target="_blank">terms & rules for the contest</a>. Any inappropriate photos will be deleted. The University of Iowa is not accountable for the offending images.</p>');
+		$termsLabel = new LiteralField("Terms", 'Any inappropriate photos will be deleted. The University of Iowa is not accountable for the offending images.</p>');
 
 
 		

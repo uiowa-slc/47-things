@@ -1,7 +1,7 @@
 		<div id="content-nav">
 			<ul>
 			<li><a href="{$BaseHref}" class="nav-button">home</a></li> 
-			<li><a href="{$BaseHref}submission-form/?thing={$Thing.ID}" class="fancybox nav-button"><span>Enter your photo for a chance to win the new iPad</span></a></li>
+			<li><a href="{$BaseHref}submission-form/?thing={$Thing.ID}" class="fancybox nav-button"><span>add your photo for a chance to win the new iPad</span></a></li>
 			
 						
 			

@@ -945,15 +945,12 @@ body#popup {
 }
 
 #submission-nav {
-	 margin-top: 20px;
 	 position: absolute;
-
-	
 }
 
 .facebook-nav{
 	font-size: 16px;
-	float: left;
+	/*float: left;*/
 	background: #3B5998;
 	color: white;
 	font-family: 'Lucida Grande', 'Helvetica', 'Tahoma' sans;
@@ -968,7 +965,7 @@ body#popup {
 
 .report-button{
 	display: block;
-	float: right;   
+	/*float: right; */  
 	font-size: 16px;
 	padding: 10px;
 	/*color: #534741;*/

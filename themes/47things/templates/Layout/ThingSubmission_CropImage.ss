@@ -77,6 +77,13 @@
 				$('#close-button').click(function(){
 					$('#save-cropped-button').click();
 				});
+				
+				$('.fancybox-close').click(function(){
+				
+				
+				});
+				
+				
 
 
 			});
@@ -155,7 +162,7 @@
 		<div class="secondary-actions">
 			<form action="{$Link}doResetCropping" method="post" onsubmit="">
 				<input type="hidden" id="clockwiseImageID" name="clockwiseImageID" value="$Image.ID" />
-				<input type="submit" class="edit-button reset-button" value="Reset all cropping/rotation" onClick="" />
+				<input type="submit" class="edit-button reset-button" value="Reset all cropping/rotation &raquo;" onClick="" />
 			</form>
 
 			<div class="clear"></div>
