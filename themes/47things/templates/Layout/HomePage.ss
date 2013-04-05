@@ -4,12 +4,13 @@
 	<section id="feature">
 			<% include MainNavigation %>
 			<% control RandomSubmission %>
-				
+				<a href="$Thing.Link">
 				<% if Image.hasRotationOrCroppingInfo %>
 					$Image.CroppedVersion
 				<% else %>
 					$Image.CroppedImage(400,400)
 				<% end_if %>
+				</a>
 		<div id="feature_text">
 			<h2><a href="$Thing.Link"><span>Thing #{$Thing.Number}:</span> $Thing.Title</a></h2>
 				<% if Content %>

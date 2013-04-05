@@ -22,10 +22,9 @@ class ThingSubmissionImage extends Image {
 	
 		
 	public function generateRotated(GD $gd) {
-		//print_r("DFAADSFDSFA");
-		$degrees = $this->Rotation;
-		//print_r($degrees);
 
+		$degrees = $this->Rotation;
+		
 		$rotatedImage = $gd->resizeByWidth(400);
 		$rotatedImage = $rotatedImage->rotate($degrees);
         return $rotatedImage;
@@ -42,16 +41,9 @@ class ThingSubmissionImage extends Image {
 		if($this->hasCroppingInfo()){
 			
 			$croppedWidthImage = $croppedWidthImage->crop($this->CroppedY, $this->CroppedX, $this->CroppedW, $this->CroppedH);
-			
-			//print_r("rotation:");
-			//print_r($this->Rotation);
-			//return $croppedWidthImage->crop($this->CroppedY, $this->CroppedX, $this->CroppedW, $this->CroppedH);
-			
-		}
-		
-		
 
-		
+		}
+
 			return $croppedWidthImage;
 	}
 	
@@ -83,10 +75,7 @@ class ThingSubmissionImage extends Image {
 			return false;
 			
 		}
-		
-		
+
 	}
-
-
 
 }

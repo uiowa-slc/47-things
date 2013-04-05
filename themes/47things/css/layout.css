@@ -945,7 +945,7 @@ body#popup {
 }
 
 #submission-nav {
-	 position: absolute;
+	 float: right;
 }
 
 .facebook-nav{
@@ -1015,7 +1015,10 @@ body#popup {
 
 
 }
-
+#form-container label {
+	margin: 10px 0;
+	
+}
 
 /*
  * HTML5 Boilerplate

@@ -175,7 +175,8 @@ class ThingSubmission_Controller extends Page_Controller {
 	
 	public function FlagSubmission(){
 	
-
+		$entry = DataObject::get_by_id("ThingSubmission",$this->ID);
+		
 		/* if this has been flagged before, let's not send a bunch of emails */
 		if($this->Flagged == false){		
 			$from = "47 Things";
@@ -191,8 +192,9 @@ class ThingSubmission_Controller extends Page_Controller {
 			
 					
 					
-			$this->Flagged = true;
-			$this->write();
+			$entry->Flagged = true;
+			$entry->writeToStage("Stage");
+			$entry->publish("Stage","Live");
 			
 		}
 		

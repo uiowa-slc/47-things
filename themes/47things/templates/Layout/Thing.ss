@@ -26,7 +26,6 @@
 						$Thing.Content
 						
 					<% else %>
-				
 						
 					<% end_if %>
 					
@@ -48,7 +47,8 @@
 			<section id ="feature">
 				<img src="{$ThemeDir}/images/blank_photo.png" />
 			<div id="feature_text">
-			$Content
+				<p> Nobody's done this yet?! What are you waiting for? <a href="submission-form/?thing={$ID}" class="fancybox">Submit a photo now!</a></p> 
+
 			</div>
 			</section>
 			<div class="clear"></div>

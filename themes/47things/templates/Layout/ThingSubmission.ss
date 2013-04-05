@@ -24,7 +24,7 @@
 						<% include Caption %>
 					<div id="submission-nav">
 					<a class="nav-button facebook-nav"href="https://www.facebook.com/sharer.php?u=$Thing.AbsoluteLink&t=$Thing.Title">share this on facebook!</a>
-				<% if CurrentMember %> <a class="report-button nav-button" href="{$Link}FlagSubmission">flag this as inappropriate</a> <% end_if %>
+				<% if Flagged %> <% else %><a class="report-button nav-button" href="{$Link}FlagSubmission">flag this as inappropriate</a> <% end_if %>
 				
 					<% if CurrentUserOwnsSubmission %>
 					<a class="report-button nav-button fancybox" href="{$Link}CropImage">crop, rotate, or replace this photo</a>
