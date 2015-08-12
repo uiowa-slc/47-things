@@ -41,3 +41,7 @@ FacebookConnect::set_lang('en_US');
 /*RecaptchaField::$public_api_key = '6LciYb8SAAAAAAQbOZzL5o3uqCygC3qmtFIppRkF';
 RecaptchaField::$private_api_key = '6LciYb8SAAAAAAiHTl1-SV0qdUg6nIw9qN98Syxv';
 SpamProtectorManager::set_spam_protector("RecaptchaProtector");*/
+
+if(Director::isLive()) {
+	Director::forceSSL(array('/^Security/','/^admin/'));
+}
