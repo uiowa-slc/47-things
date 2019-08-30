@@ -1,1 +1,0 @@
-<fb:login-button size="xlarge" scope="$Top.FacebookPermissions"></fb:login-button>

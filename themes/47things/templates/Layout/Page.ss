@@ -1,19 +1,23 @@
-<!-- page content starts -->
-	<div id="page_content" class="clearfix">
-	<div id="Content">
-	<h2>$Title</h2>
-		<div id="content-nav">
-		<ul>
-		<li><a href="{$BaseHref}" class="nav-button">home</a></li> 
-		<li><a href="http://47things.uiowa.edu/submission-form/?thing={$ID}" class="fancybox nav-button">Enter your photo for a chance to win the new iPad!</a></li>
-		</ul>
-		<div class="clear"></div>
+<% include Header %>
 
+
+<div class="container">
+	<div class="row">
+		<div class=" col-sm px-lg-0 content-container" role="main">
+			<article>
+				<h1>$Title</h1>
+				<div class="content">$Content</div>
+				<%--<% include MagnificExample %> -- %>
+				<%-- <% include SlideshowExample %> --%>
+				<%-- <% include ContentExample %> --%>
+			</article>
+			$Form
+			$PageComments
+
+		</div>
+		<% if $Menu(2) || $SideBarView.Widgets %>
+			<% include SideBar %>
+		<% end_if %>
 	</div>
-	<div class="single-page-content">
-	$Content
-	$Form
-	</div>
-	</div>
-	</div>
-<!-- page content ends -->
+</div>
+

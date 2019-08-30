@@ -1,0 +1,57 @@
+/*-------------------------------------------
+    Bootstrap Configuration
+    variables are in node_modules/bootstrap/scss/_variables.scss
+-------------------------------------------*/
+
+// Color system
+$gold: #ffcd00;
+$highlight: $gold;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1300px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px
+);
+
+
+// Fonts
+$enable-responsive-font-sizes: true;
+$font-family-base: "proxima-nova",sans-serif;
+$headings-font-family: "proxima-nova-alt-condensed",sans-serif;
+$font-size-base: 1.1rem;
+$headings-font-weight: 600;
+
+
+// Jumbotron
+$jumbotron-padding: 6rem;
+$jumbotron-color: #333;
+$jumbotron-bg: #f6f9fc;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 4.5),
+  7: ($spacer * 6),
+  8: ($spacer * 9),
+  9: ($spacer * 12)
+)
