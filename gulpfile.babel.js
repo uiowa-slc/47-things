@@ -20,7 +20,7 @@ const reload = browserSync.reload;
 
 // Lint JavaScript
 function lint(){
-  return gulp.src('./themes/47-things/scripts/**/*.js')
+  return gulp.src('./themes/47things/scripts/**/*.js')
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failOnError()));
@@ -29,13 +29,13 @@ function lint(){
 
 // Optimize images
 function images(){
-  return gulp.src('./themes/47-things/src/images/**/*')
+  return gulp.src('./themes/47things/src/images/**/*')
     .pipe($.imagemin({
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('./themes/47-things/dist/images'))
-    .pipe($.size({title: './themes/47-things/dist/images'}));
+    .pipe(gulp.dest('./themes/47things/dist/images'))
+    .pipe($.size({title: './themes/47things/dist/images'}));
 }
 
 
@@ -43,15 +43,15 @@ function images(){
 function copy(){
 
   return gulp.src([
-       './themes/47-things/src/*',
-       './themes/47-things/src/**/*',
-       '!./themes/47-things/src/styles/**/*',
-       '!./themes/47-things/src/scripts/**/*',
-       '!./themes/47-things/src/templates',
-       '!./themes/47-things/src/templates/**/*',
-       '!./themes/47-things/*.html',
+       './themes/47things/src/*',
+       './themes/47things/src/**/*',
+       '!./themes/47things/src/styles/**/*',
+       '!./themes/47things/src/scripts/**/*',
+       '!./themes/47things/src/templates',
+       '!./themes/47things/src/templates/**/*',
+       '!./themes/47things/*.html',
      ],{dot: true})
-    .pipe(gulp.dest('./themes/47-things/dist/'))
+    .pipe(gulp.dest('./themes/47things/dist/'))
     .pipe($.size({title: 'copy'}));
 }
 
@@ -80,14 +80,14 @@ function styles(){
 
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-    './themes/47-things/src/styles/main.scss',
+    './themes/47things/src/styles/main.scss',
   ])
     .pipe($.newer('.tmp/styles'))
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       precision: 10,
       includePaths: [
-        './themes/47-things/src/bower_components/foundation/scss/',
+        './themes/47things/src/bower_components/foundation/scss/',
         './vendor/md/uiowa-bar/scss',
         './node_modules/'
 
@@ -98,7 +98,7 @@ function styles(){
     .pipe($.if('*.css', $.postcss(plugins)))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('./themes/47-things/dist/styles'));
+    .pipe(gulp.dest('./themes/47things/dist/styles'));
 };
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
@@ -117,7 +117,7 @@ function scripts(){
       './node_modules/lazysizes/lazysizes.js',
       './node_modules/flickity/dist/flickity.pkgd.js',
       './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-      './themes/47-things/src/scripts/app.js',
+      './themes/47things/src/scripts/app.js',
 
     ])
       .pipe($.newer('.tmp/scripts'))
@@ -130,12 +130,12 @@ function scripts(){
       // Output files
       .pipe($.size({title: 'scripts'}))
       .pipe($.sourcemaps.write('.'))
-      .pipe(gulp.dest('./themes/47-things/dist/scripts'));
+      .pipe(gulp.dest('./themes/47things/dist/scripts'));
 };
 
 //Scan your HTML for assets & optimize them
 function html(){
-  return gulp.src('./themes/47-things/src/templates/**/*.ss')
+  return gulp.src('./themes/47things/src/templates/**/*.ss')
     .pipe($.useref({
       searchPath: '{.tmp,app}',
       noAssets: true
@@ -155,21 +155,21 @@ function html(){
     })))
     // Output files
     .pipe($.if('*.ss', $.size({title: 'ss', showFiles: true})))
-    .pipe(gulp.dest('./themes/47-things/templates/'));
+    .pipe(gulp.dest('./themes/47things/templates/'));
 }
 
 
 // Clean output directory
 function clean(){
-  return del(['.tmp', './themes/47-things/dist/*', '!dist/.git'], {dot: true})
+  return del(['.tmp', './themes/47things/dist/*', '!dist/.git'], {dot: true})
 }
 
 function watch(){
-  // gulp.watch(['./themes/47-things/**/*.html'], reload);
-  // gulp.watch(['./themes/47-things/src/templates/**/*.ss'], gulp.series(html));
-  gulp.watch(['./themes/47-things/src/styles/**/*.{scss,css}'], gulp.series(styles));
-  gulp.watch(['./themes/47-things/src/scripts/**/*.js'], gulp.series(lint, scripts));
-  gulp.watch(['./themes/47-things/src/images/**/*'], gulp.series(images));
+  // gulp.watch(['./themes/47things/**/*.html'], reload);
+  // gulp.watch(['./themes/47things/src/templates/**/*.ss'], gulp.series(html));
+  gulp.watch(['./themes/47things/src/styles/**/*.{scss,css}'], gulp.series(styles));
+  gulp.watch(['./themes/47things/src/scripts/**/*.js'], gulp.series(lint, scripts));
+  gulp.watch(['./themes/47things/src/images/**/*'], gulp.series(images));
 }
 
 // });

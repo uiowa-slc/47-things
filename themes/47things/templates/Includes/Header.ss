@@ -13,9 +13,6 @@
                     <a class="nav-link" href="#">Faculty &amp; Staff</a>
                 </li>
             </ul>
-            <div class="navbar-text">
-                <a href="#" class="btn btn-outline-dark">Log In</a>
-            </div>
         </div>
     </nav>
 </header>

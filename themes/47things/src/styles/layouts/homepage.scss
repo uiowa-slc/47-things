@@ -1,147 +1,114 @@
 #BetterNavigator {display: none;}
 
-.featurette-divider {
-    margin: 5rem 0;
+body {
+    background: $yellow;
+    background-size: cover;
 }
 img {
     max-width: 100%;
 }
-.hero {
-    background: #000 url(../images/zigzag.gif) repeat 0 0;
+.top {
+    // background: $yellow;
+    // background-image: linear-gradient(#FFCD00, #ffdb46);
+    width: 100%;
+    margin-bottom: 10em;
+    padding-top: 2em;
+    position: relative;
 }
-.hero__body {
-    color: #fff;
-    padding: 10%;
+.diagonal {
+    position: relative;
 }
-.sec {
-    display: block;
-    text-transform: uppercase;
-    font-size: 11px;
-    color: $highlight;
-    letter-spacing: 1px;
-    margin-bottom: 1em;
+.diagonal-svg {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 30px;
+  left: 0;
 }
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-    > .col,
-    > [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
+.test {
+    margin-bottom: -5em;
+}
+.card-img-overlay .card-text {
+    @include media-breakpoint-up(xl) {
+        font-size: 24px;
+    }
+
+}
+.card-text {
+    position: relative;
+}
+.card-text a {
+    background-color: $yellow;
+    color: $black;
+    padding-left: 2px;
+    padding-right: 2px;
+    &:hover, &:focus {
+        color: $black;
     }
 }
 
-
-.main-carousel {
-    margin-bottom: -50px;
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
-.carousel-cell {
-    width: 550px;
-    margin-right: 20px;
-    & img {
-        width: 100%;
-    }
-}
-.main-carousel .flickity-page-dots {
-    background: #fff;
-    bottom: 0;
-    width: 50%;
-    right: 0;
-    text-align: left;
-    padding: 17px;
-}
-
-
-// Competencies
-.card-grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-.card-grid .card {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.3s ease-in-out;
-}
-.card-grid .card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
-}
-
-// Profile
-.profile {
-    background: $black url(../images/zigzag.gif) repeat top left;
-    color: #fff;
-    padding: 2em 0;
-    &__img {
-        padding: 1em;
-        @include media-breakpoint-up(lg) {
-            margin-left: -10%;
-            padding: 0;
-        }
-    }
-    @include media-breakpoint-up(lg) {
-        padding: 6em 0;
-    }
-}
-.profile__blockquote {
-    padding: 1em 2em 1em;
-    & p {
-        font-size: 20px;
-        font-weight: 300;
-        quotes: "“" "”" "‘" "’";
-        &:before {
-            content: open-quote;
-            font-size: 300px;
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            line-height: 1;
-            opacity: .2;
-        }
-        @include media-breakpoint-up(lg) {
-            font-size: 30px;
-        }
-    }
-    & footer {
-        color: $highlight;
-    }
-}
-
-// Ways to Enage
-.vd-bg::before,
-.vd-bg::after {
-    @include media-breakpoint-down(md) {
-        display: none;
-    }
-}
-.vd-bg::before {
-    content: '';
-    background: $black;
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
     position: absolute;
-    left: -2%;
-    top: -6%;
-    width: 90%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    z-index: -1;
 }
-.order-md-1 .vd-bg::before {
-    bottom: -3%;
-    right: -3%;
-    left: auto;
-    top: auto;
+
+.card-columns,
+.card-deck {
+    counter-reset: a;
 }
-.vd-bg::after {
-    content: '';
-    background: $highlight;
+.card-body {
+    padding-left: 65px;
+}
+.card-img-top + .card-body,
+.diagonal + .card-body  {
+    padding-left: 1.25rem;
+}
+.card.bg-dark .card-body {
+    padding-left: 0;
+}
+.card-body:before {
+    counter-increment: a;
+    content: counter(a);
     position: absolute;
-    bottom: -2%;
-    right: -2%;
-    width: 190px;
-    height: 50%;
-    z-index: -1;
+    top: 1.25rem;
+    color: $black;
+    left: 1.25rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    line-height: 1;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.order-md-1 .vd-bg::after {
-    left: -2%;
-    top: -6%;
-    bottom: auto;
-    right: auto;
+
+.card-img-overlay::before {
+    content: '';
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
+.card-title {
+    position: relative;
+}
+.card-text p {
+    margin-bottom: 0;
+}
+
