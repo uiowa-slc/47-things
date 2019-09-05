@@ -1,52 +1,23 @@
-#BetterNavigator {display: none;}
-
-body {
-    background: $yellow;
-    background-size: cover;
+@font-face {
+  font-family: 'Caroni-Regular';
+  src: url('../images/Caroni-Regular.eot?#iefix') format('embedded-opentype'),  url('../images/Caroni-Regular.otf')  format('opentype'),
+         url('../images/Caroni-Regular.woff') format('woff'), url('../images/Caroni-Regular.ttf')  format('truetype'), url('../images/Caroni-Regular.svg#Caroni-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 img {
     max-width: 100%;
 }
-.top {
-    // background: $yellow;
-    // background-image: linear-gradient(#FFCD00, #ffdb46);
+
+/* Header
+================================= */
+.hero {
     width: 100%;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
     padding-top: 2em;
     position: relative;
 }
-.diagonal {
-    position: relative;
-}
-.diagonal-svg {
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 30px;
-  left: 0;
-}
-.test {
-    margin-bottom: -5em;
-}
-.card-img-overlay .card-text {
-    @include media-breakpoint-up(xl) {
-        font-size: 24px;
-    }
-
-}
-.card-text {
-    position: relative;
-}
-.card-text a {
-    background-color: $yellow;
-    color: $black;
-    padding-left: 2px;
-    padding-right: 2px;
-    &:hover, &:focus {
-        color: $black;
-    }
-}
-
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -64,19 +35,49 @@ img {
     height: 100%;
 }
 
-.card-columns,
+
+
+
+
+
+
+/* Cards
+=============================== */
+.card-text {
+    font-family: "Caroni-Regular",sans-serif;
+    font-size: 1.35rem;
+    position: relative;
+}
+
+.card-text a { /* adds background color on links */
+    color: $black;
+    text-decoration: none;
+    background-image: linear-gradient(transparent calc(100% - 70%), $highlight 0px);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+/* Diagonal SVGs */
+.diagonal {
+    position: relative;
+}
+.diagonal-svg {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 30px;
+  left: 0;
+}
+
+
+/* Counter Numbers
+================================ */
 .card-deck {
     counter-reset: a;
-}
-.card-body {
-    padding-left: 65px;
-}
-.card-img-top + .card-body,
-.diagonal + .card-body  {
-    padding-left: 1.25rem;
-}
-.card.bg-dark .card-body {
-    padding-left: 0;
 }
 .card-body:before {
     counter-increment: a;
@@ -94,8 +95,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.2)
 }
 
+
+/* Image Overlays
+================================= */
 .card-img-overlay::before {
     content: '';
     background: rgba(0,0,0,.5);
@@ -105,10 +110,13 @@ img {
     bottom: 0;
     left: 0;
 }
+.card-img-overlay .card-text {
+    @include media-breakpoint-up(xl) {
+        font-size: 1.6rem;
+    }
+}
 .card-title {
     position: relative;
 }
-.card-text p {
-    margin-bottom: 0;
-}
+
 

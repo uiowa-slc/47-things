@@ -110,13 +110,13 @@ function scripts(){
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
       './node_modules/jquery/dist/jquery.js',
-      './node_modules/popper.js/dist/umd/popper.min.js',
-      './node_modules/tether/dist/js/tether.min.js',
-      './node_modules/bootstrap/dist/js/bootstrap.min.js',
-      './node_modules/@fortawesome/fontawesome-free/js/regular.js',
+      // './node_modules/popper.js/dist/umd/popper.min.js',
+      // './node_modules/tether/dist/js/tether.min.js',
+      // './node_modules/bootstrap/dist/js/bootstrap.min.js',
+      // './node_modules/@fortawesome/fontawesome-free/js/regular.js',
       './node_modules/lazysizes/lazysizes.js',
-      './node_modules/flickity/dist/flickity.pkgd.js',
-      './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+      // './node_modules/flickity/dist/flickity.pkgd.js',
+      // './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
       './themes/47things/src/scripts/app.js',
 
     ])

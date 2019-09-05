@@ -1,5 +1,5 @@
 
-<div class="top">
+<div class="hero">
     <div class="container" style="position: relative; z-index: 1;">
         <div class="row">
             <div class="col-sm-12 ">
@@ -7,8 +7,8 @@
                     <img src="$ThemeDir/dist/images/47things.jpg" alt="47 Things You Should Do At IOWA">
                 </h1>
                 <% if $Youtube %>
-                    <div class='embed-container test'>
-                        <iframe src="$Youtube" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class='embed-container'>
+                        <iframe src="$Youtube" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="University of Iowa Bucket List"></iframe>
                     </div>
                 <% end_if %>
             </div>
@@ -19,16 +19,13 @@
 
 <main role="main">
 
-<%-- $Content --%>
-
-
 <% if $Things %>
     <section class="container">
         <div class="card-deck">
              <% loop $Things %>
-                <% if $MultipleOf(7) %>
+                <% if $MultipleOf(7) %><!-- use image overlay every 7 cards -->
                     <div class="card mb-4 bg-dark text-white">
-                        <img src="$MainImage.Fill(300,420).URL" class="card-img-top" alt="$Title" loading="lazy">
+                        <img src="$MainImage.Fill(300,450).URL" class="card-img-top" alt="$Title" loading="lazy">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="card-body">
                                 <div class="card-text">$Content</div>
@@ -52,13 +49,13 @@
                 <% end_if %>
 
                 <% if $MultipleOf(2) %>
-                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                    <div class="w-100 d-none d-sm-block d-md-none"><!-- break every 2 on sm--></div>
                 <% end_if %>
                 <% if $MultipleOf(3) %>
-                    <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                    <div class="w-100 d-none d-md-block d-lg-none"><!-- break every 3 on md--></div>
                 <% end_if %>
                 <% if $MultipleOf(4) %>
-                    <div class="w-100 d-none d-lg-block"></div><!-- wrap every 4 on lg-->
+                    <div class="w-100 d-none d-lg-block"></div><!-- break every 4 on lg-->
                 <% end_if %>
 
 
