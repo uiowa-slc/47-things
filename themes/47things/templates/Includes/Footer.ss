@@ -82,34 +82,34 @@
                 <h3 class="footer__heading">Social Media</h3>
                 <ul class="">
                     <% if $SiteConfig.FacebookLink %>
-                        <li><a href="$SiteConfig.FacebookLink" target="_blank" class="footer__facebook" itemprop="sameAs">Facebook</a></li>
+                        <li><a href="$SiteConfig.FacebookLink" target="_blank" class="footer__facebook" itemprop="sameAs" rel="noopener">Facebook</a></li>
                     <% end_if %>
                     <% if $SiteConfig.TwitterLink %>
-                        <li><a href="$SiteConfig.TwitterLink" target="_blank" class="footer__twitter" itemprop="sameAs">Twitter</a></li>
+                        <li><a href="$SiteConfig.TwitterLink" target="_blank" class="footer__twitter" itemprop="sameAs" rel="noopener">Twitter</a></li>
                     <% end_if %>
                     <% if $SiteConfig.VimeoLink %>
-                        <li><a href="$SiteConfig.VimeoLink" target="_blank" class="footer__vimeo" itemprop="sameAs">Vimeo</li>
+                        <li><a href="$SiteConfig.VimeoLink" target="_blank" class="footer__vimeo" itemprop="sameAs" rel="noopener">Vimeo</li>
                     <% end_if %>
                     <% if $SiteConfig.YouTubeLink %>
-                        <li><a href="$SiteConfig.YouTubeLink" target="_blank" class="footer__youtube" itemprop="sameAs">Youtube</a></li>
+                        <li><a href="$SiteConfig.YouTubeLink" target="_blank" class="footer__youtube" itemprop="sameAs" rel="noopener">Youtube</a></li>
                     <% end_if %>
                     <% if $SiteConfig.InstagramLink %>
-                        <li><a href="$SiteConfig.InstagramLink" target="_blank" class="footer__instagram" itemprop="sameAs">Instagram</a></li>
+                        <li><a href="$SiteConfig.InstagramLink" target="_blank" class="footer__instagram" itemprop="sameAs" rel="noopener">Instagram</a></li>
                     <% end_if %>
                     <% if $SiteConfig.LinkedInLink %>
-                        <li><a href="$SiteConfig.LinkedInLink" target="_blank" class="footer__linkedin" itemprop="sameAs">LinkedIn</a></li>
+                        <li><a href="$SiteConfig.LinkedInLink" target="_blank" class="footer__linkedin" itemprop="sameAs" rel="noopener">LinkedIn</a></li>
                     <% end_if %>
                     <% if $SiteConfig.PinterestLink %>
-                        <li><a href="$SiteConfig.PinterestLink" target="_blank" class="footer__pinterest" itemprop="sameAs">Pinterest</a></li>
+                        <li><a href="$SiteConfig.PinterestLink" target="_blank" class="footer__pinterest" itemprop="sameAs" rel="noopener">Pinterest</a></li>
                     <% end_if %>
                     <% if $SiteConfig.FlickrLink %>
-                        <li><a href="$SiteConfig.FlickrLink" target="_blank" class="footer__flickr" itemprop="sameAs">Flickr</a></li>
+                        <li><a href="$SiteConfig.FlickrLink" target="_blank" class="footer__flickr" itemprop="sameAs" rel="noopener">Flickr</a></li>
                     <% end_if %>
                     <% if $SiteConfig.Github %>
-                        <li><a href="$SiteConfig.Github" target="_blank" class="footer__github" itemprop="sameAs">Github</a></li>
+                        <li><a href="$SiteConfig.Github" target="_blank" class="footer__github" itemprop="sameAs" rel="noopener">Github</a></li>
                     <% end_if %>
                     <% if $SiteConfig.Snapchat %>
-                        <li><a href="https://www.snapchat.com/add/$SiteConfig.Snapchat" target="_blank" class="footer__snapchat" itemprop="sameAs">Snapchat</a></li>
+                        <li><a href="https://www.snapchat.com/add/$SiteConfig.Snapchat" target="_blank" class="footer__snapchat" itemprop="sameAs" rel="noopener">Snapchat</a></li>
                     <% end_if %>
                 </ul>
                 <% if $SiteConfig.Disclaimer %>
