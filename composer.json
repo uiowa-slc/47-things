@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.6.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.4.1@stable",
+        "silverstripe/recipe-cms": "4.4.*@stable",
         "md/ac-json-events": "dev-ss4.x-ui",
         "md/saml": "dev-md",
         "md/division-analytics": "1.*",
