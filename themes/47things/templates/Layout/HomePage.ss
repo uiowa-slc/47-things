@@ -17,7 +17,7 @@
 </div>
 
 
-<main role="main">
+<main id="content">
 
 <% if $Things %>
     <section class="container">

@@ -1,5 +1,5 @@
 
-<footer class="footer" role="contentinfo">
+<footer class="footer">
     <div class="footer__container container <% if $SiteConfig.FacebookLink || $SiteConfig.TwitterLink || $SiteConfig.VimeoLink || $SiteConfig.YouTubeLink || $SiteConfig.InstagramLink || $SiteConfig.LinkedInLink || $SiteConfig.PinterestLink || $SiteConfig.FlickrLink %>footer__container--with-social<% end_if %>">
 
         <div class="row">
