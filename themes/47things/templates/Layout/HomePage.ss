@@ -25,7 +25,7 @@
              <% loop $Things %>
                 <% if $MultipleOf(7) %><!-- use image overlay every 7 cards -->
                     <div class="card mb-4 bg-dark text-white">
-                        <img src="$MainImage.Fill(300,450).URL" class="card-img-top" alt="$Title" loading="lazy">
+                        <img data-src="$MainImage.Fill(300,450).URL" class="card-img-top lazyload" alt="$Title">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="card-body">
                                 <div class="card-text">$Content</div>
@@ -36,7 +36,7 @@
                     <div class="card mb-4">
                         <% if $MainImage %>
                             <div class="diagonal">
-                                <img src="$MainImage.Fill(400,300).URL" class="card-img-top" alt="$Title" loading="lazy">
+                                <img data-src="$MainImage.Fill(500,400).URL" class="card-img-top lazyload" alt="$Title">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="diagonal-svg">
                                     <polygon fill="white" points="0,100 100,0 100,100"/>
                                 </svg>
