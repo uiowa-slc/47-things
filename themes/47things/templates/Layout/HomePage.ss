@@ -18,7 +18,9 @@
 
 
 <main id="content">
-
+<div class="main-content">
+    $Content
+</div>
 <% if $Things %>
     <section class="container">
         <div class="card-deck">
