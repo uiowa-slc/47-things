@@ -11,8 +11,8 @@
             <% else_if $SiteConfig.DisableDivisionBranding %>
                 <a href="http://uiowa.edu" class="footer__logo"><img class="lazyload" data-src="{$ThemeDir}/dist/images/ui-logo-footer.png" alt="The University of Iowa"></a>
             <% else %>
-                <a href="http://studentlife.uiowa.edu" class="footer__logo"><img class="lazyload" width="300" height="81
-            " data-src="{$ThemeDir}/dist/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
+                <a href="http://studentlife.uiowa.edu" class="footer__logo"><img class="lazyload"
+         data-src="{$ThemeDir}/dist/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
             <% end_if %>
             <% if $SiteConfig.GroupSummary %>
                 <div class="footer__summary">$SiteConfig.GroupSummary</div>
