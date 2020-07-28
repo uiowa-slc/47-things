@@ -1,8 +1,5 @@
 ---
-Name: division-extensions
+Name: myextensions
 After:
     - '*'
 ---
-SilverStripe\SiteConfig\SiteConfig:
-  extensions:
-    - SiteConfigExtension

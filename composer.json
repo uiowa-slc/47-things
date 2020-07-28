@@ -1,21 +1,10 @@
 {
     "name": "md/47-things",
     "type": "silverstripe-recipe",
-    "description": "The SilverStripe Framework Installer",
+    "description": "47 Things Website",
     "require": {
-        "php": ">=5.6.0",
-        "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.5.*@stable",
-        "md/ac-json-events": "dev-ss4.x-ui",
-        "md/saml": "dev-md",
-        "md/division-analytics": "1.*",
-        "md/uiowa-bar": "2.*",
-        "md/deploy-helper": "*",
-        "gorriecoe/silverstripe-webfonts": "*",
-        "jonom/silverstripe-betternavigator": "*",
-        "silverstripe/blog": "^3.3",
-        "md/silverstripe-maintenance-mode": "dev-master",
-        "undefinedoffset/sortablegridfield": "^2.0"
+        "php": ">=7.2.0",
+        "md/bootstrap-project": "dev-main"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
@@ -28,6 +17,7 @@
         "project-files-installed": [
             "app/.htaccess",
             "app/_config.php",
+            "app/_config/mimevalidator.yml",
             "app/_config/mysite.yml",
             "app/src/Page.php",
             "app/src/PageController.php"
@@ -46,6 +36,10 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project"
+        },
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"

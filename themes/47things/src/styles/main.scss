@@ -43,7 +43,10 @@
 /* Plugins
 -------------------------------------------*/
 @import "flickity/css/flickity";
-
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
 
 /* Division Top Bar
 --------------------------------------------*/
@@ -52,8 +55,12 @@
 
 @import "mixins/remcalc";
 
+/* Bootstrap Project Files
+--------------------------------------------*/
+@import "components/footer";
+
 /* Layout
 -------------------------------------------*/
 @import "components/header";
-@import "components/footer";
+
 @import "layouts/homepage";
