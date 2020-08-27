@@ -90,16 +90,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd"
+                "reference": "8a7ecad675253e4654ea05505233285377405215"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/95c63ab2117a72f48f5a55da9740a3273d45b7fd",
-                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8a7ecad675253e4654ea05505233285377405215",
+                "reference": "8a7ecad675253e4654ea05505233285377405215",
                 "shasum": ""
             },
             "require": {
@@ -148,11 +148,15 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-08T08:27:21+00:00"
+            "time": "2020-08-23T12:54:47+00:00"
         },
         {
             "name": "composer/installers",
@@ -835,20 +839,21 @@
         },
         {
             "name": "md/ac-json-events",
-            "version": "dev-ss4.x-ui",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "3b6bac0452b7bede6367fb5e16f974a3c4779b76"
+                "reference": "09836ebcc61b407372765b56df4e066efdcc32c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/3b6bac0452b7bede6367fb5e16f974a3c4779b76",
-                "reference": "3b6bac0452b7bede6367fb5e16f974a3c4779b76",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/09836ebcc61b407372765b56df4e066efdcc32c8",
+                "reference": "09836ebcc61b407372765b56df4e066efdcc32c8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
+                "quamsta/silverstripe-api-cacher": "*",
                 "silverstripe/cms": "4.*",
                 "silverstripe/framework": "4.*"
             },
@@ -860,10 +865,10 @@
             },
             "description": "After Class JSON Display Module",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/ss4.x-ui",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/3",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2020-01-03T16:17:24+00:00"
+            "time": "2020-08-25T20:00:21+00:00"
         },
         {
             "name": "md/bootstrap-project",
@@ -871,18 +876,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project.git",
-                "reference": "0297dca6c196f514e0a2666172a00af0c9532cf4"
+                "reference": "87f2e7c9ace2cae26631be2fec86980729428969"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/0297dca6c196f514e0a2666172a00af0c9532cf4",
-                "reference": "0297dca6c196f514e0a2666172a00af0c9532cf4",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/87f2e7c9ace2cae26631be2fec86980729428969",
+                "reference": "87f2e7c9ace2cae26631be2fec86980729428969",
                 "shasum": ""
             },
             "require": {
                 "gorriecoe/silverstripe-webfonts": "*",
                 "jonom/silverstripe-betternavigator": "*",
-                "md/ac-json-events": "dev-ss4.x-ui",
+                "md/ac-json-events": "3.*",
                 "md/deploy-helper": "*",
                 "md/division-analytics": "1.*",
                 "md/saml": "dev-md",
@@ -907,7 +912,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/tree/main",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/issues"
             },
-            "time": "2020-07-28T21:03:04+00:00"
+            "time": "2020-08-26T18:11:04+00:00"
         },
         {
             "name": "md/deploy-helper",
@@ -1211,16 +1216,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.7.0",
+            "version": "v4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300"
+                "reference": "aaee038b912e567780949787d5fe1977be11a778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
-                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/aaee038b912e567780949787d5fe1977be11a778",
+                "reference": "aaee038b912e567780949787d5fe1977be11a778",
                 "shasum": ""
             },
             "require": {
@@ -1228,8 +1233,8 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "0.0.5",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -1237,7 +1242,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.7-dev"
+                    "dev-master": "4.9-dev"
                 }
             },
             "autoload": {
@@ -1259,7 +1264,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-07-25T13:18:53+00:00"
+            "time": "2020-08-18T19:48:01+00:00"
         },
         {
             "name": "onelogin/php-saml",
@@ -1684,16 +1689,16 @@
         },
         {
             "name": "silverstripe/admin",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-admin.git",
-                "reference": "ae97a2000e44c5cc1a67b7dcbc523d062aff5785"
+                "reference": "8c5609c4248536528c8154a804793c754c95a276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/ae97a2000e44c5cc1a67b7dcbc523d062aff5785",
-                "reference": "ae97a2000e44c5cc1a67b7dcbc523d062aff5785",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/8c5609c4248536528c8154a804793c754c95a276",
+                "reference": "8c5609c4248536528c8154a804793c754c95a276",
                 "shasum": ""
             },
             "require": {
@@ -1738,20 +1743,20 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2020-06-12T04:00:38+00:00"
+            "time": "2020-08-12T02:43:46+00:00"
         },
         {
             "name": "silverstripe/asset-admin",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-asset-admin.git",
-                "reference": "6c3a6197e5bd5bb8f45e007338b4c2c3b4f3a6c6"
+                "reference": "0b0550049e4428503c66d95c47dab1e9ccb24c57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/6c3a6197e5bd5bb8f45e007338b4c2c3b4f3a6c6",
-                "reference": "6c3a6197e5bd5bb8f45e007338b4c2c3b4f3a6c6",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/0b0550049e4428503c66d95c47dab1e9ccb24c57",
+                "reference": "0b0550049e4428503c66d95c47dab1e9ccb24c57",
                 "shasum": ""
             },
             "require": {
@@ -1784,20 +1789,20 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2020-07-10T02:44:20+00:00"
+            "time": "2020-08-11T22:36:31+00:00"
         },
         {
             "name": "silverstripe/assets",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-assets.git",
-                "reference": "d7ed6e314cfe54ae54955d653733d3e9a67ef1ec"
+                "reference": "19f8412645da78db7d6f59b2dd6a54a8871c41e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/d7ed6e314cfe54ae54955d653733d3e9a67ef1ec",
-                "reference": "d7ed6e314cfe54ae54955d653733d3e9a67ef1ec",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/19f8412645da78db7d6f59b2dd6a54a8871c41e9",
+                "reference": "19f8412645da78db7d6f59b2dd6a54a8871c41e9",
                 "shasum": ""
             },
             "require": {
@@ -1843,7 +1848,7 @@
                 "assets",
                 "silverstripe"
             ],
-            "time": "2020-06-05T01:57:31+00:00"
+            "time": "2020-08-10T03:57:54+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -2126,16 +2131,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "4.6.0",
+            "version": "4.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "d94075b02ca9130bd1a686ca37181ef3f5af2a22"
+                "reference": "ec7cfb84149da6a440619069c12f042e6ccefda3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/d94075b02ca9130bd1a686ca37181ef3f5af2a22",
-                "reference": "d94075b02ca9130bd1a686ca37181ef3f5af2a22",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/ec7cfb84149da6a440619069c12f042e6ccefda3",
+                "reference": "ec7cfb84149da6a440619069c12f042e6ccefda3",
                 "shasum": ""
             },
             "require": {
@@ -2239,7 +2244,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-07-12T22:55:43+00:00"
+            "time": "2020-08-12T22:09:50+00:00"
         },
         {
             "name": "silverstripe/graphql",
@@ -2388,30 +2393,30 @@
         },
         {
             "name": "silverstripe/recipe-cms",
-            "version": "4.6.0",
+            "version": "4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/recipe-cms.git",
-                "reference": "30bafaa164813abfb79c34b545db136dc928ae66"
+                "reference": "90a790b1c3230f011a948f4c2db5768e778e8a0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/recipe-cms/zipball/30bafaa164813abfb79c34b545db136dc928ae66",
-                "reference": "30bafaa164813abfb79c34b545db136dc928ae66",
+                "url": "https://api.github.com/repos/silverstripe/recipe-cms/zipball/90a790b1c3230f011a948f4c2db5768e778e8a0f",
+                "reference": "90a790b1c3230f011a948f4c2db5768e778e8a0f",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/admin": "1.6.0@stable",
-                "silverstripe/asset-admin": "1.6.0@stable",
+                "silverstripe/admin": "1.6.1@stable",
+                "silverstripe/asset-admin": "1.6.1@stable",
                 "silverstripe/campaign-admin": "1.6.0@stable",
                 "silverstripe/cms": "4.6.0@stable",
                 "silverstripe/errorpage": "1.6.0@stable",
                 "silverstripe/graphql": "3.3.0@stable",
-                "silverstripe/recipe-core": "4.6.0@stable",
+                "silverstripe/recipe-core": "4.6.1@stable",
                 "silverstripe/recipe-plugin": "^1.2",
                 "silverstripe/reports": "4.6.0@stable",
                 "silverstripe/siteconfig": "4.6.0@stable",
-                "silverstripe/versioned": "1.6.0@stable",
+                "silverstripe/versioned": "1.6.2@stable",
                 "silverstripe/versioned-admin": "1.6.0@stable"
             },
             "require-dev": {
@@ -2431,26 +2436,26 @@
             ],
             "description": "SilverStripe recipe for fully featured page and asset content editing",
             "homepage": "http://silverstripe.org",
-            "time": "2020-07-12T23:00:36+00:00"
+            "time": "2020-08-13T02:39:05+00:00"
         },
         {
             "name": "silverstripe/recipe-core",
-            "version": "4.6.0",
+            "version": "4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/recipe-core.git",
-                "reference": "4905c049e3fb51ffd99d1d9716c8532857ab7e53"
+                "reference": "0e979ade54e42045374f0931b5878bbf55803bd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/recipe-core/zipball/4905c049e3fb51ffd99d1d9716c8532857ab7e53",
-                "reference": "4905c049e3fb51ffd99d1d9716c8532857ab7e53",
+                "url": "https://api.github.com/repos/silverstripe/recipe-core/zipball/0e979ade54e42045374f0931b5878bbf55803bd3",
+                "reference": "0e979ade54e42045374f0931b5878bbf55803bd3",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/assets": "1.6.0@stable",
+                "silverstripe/assets": "1.6.1@stable",
                 "silverstripe/config": "1.0.18@stable",
-                "silverstripe/framework": "4.6.0@stable",
+                "silverstripe/framework": "4.6.2@stable",
                 "silverstripe/mimevalidator": "2.0.0@stable",
                 "silverstripe/recipe-plugin": "^1.2"
             },
@@ -2476,7 +2481,7 @@
             ],
             "description": "SilverStripe framework-only core recipe",
             "homepage": "http://silverstripe.org",
-            "time": "2020-07-12T22:59:21+00:00"
+            "time": "2020-08-13T02:38:27+00:00"
         },
         {
             "name": "silverstripe/recipe-plugin",
@@ -2686,16 +2691,16 @@
         },
         {
             "name": "silverstripe/tagfield",
-            "version": "2.4.2",
+            "version": "2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-tagfield.git",
-                "reference": "3b6ec92e668272d62935c626d047e7ff7d3f2089"
+                "reference": "66aa1af72a4678132e3b14ed88d886d22450ea89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/3b6ec92e668272d62935c626d047e7ff7d3f2089",
-                "reference": "3b6ec92e668272d62935c626d047e7ff7d3f2089",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/66aa1af72a4678132e3b14ed88d886d22450ea89",
+                "reference": "66aa1af72a4678132e3b14ed88d886d22450ea89",
                 "shasum": ""
             },
             "require": {
@@ -2735,7 +2740,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2020-05-06T19:28:42+00:00"
+            "time": "2020-07-06T23:55:48+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -2787,16 +2792,16 @@
         },
         {
             "name": "silverstripe/versioned",
-            "version": "1.6.0",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-versioned.git",
-                "reference": "3f83620c5b3ce915d60c26588358559671b811c1"
+                "reference": "6aedf12c3f0c40aec47bc041693ffe76772b2131"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/3f83620c5b3ce915d60c26588358559671b811c1",
-                "reference": "3f83620c5b3ce915d60c26588358559671b811c1",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/6aedf12c3f0c40aec47bc041693ffe76772b2131",
+                "reference": "6aedf12c3f0c40aec47bc041693ffe76772b2131",
                 "shasum": ""
             },
             "require": {
@@ -2841,7 +2846,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-06-15T00:35:01+00:00"
+            "time": "2020-08-10T03:46:01+00:00"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -3250,7 +3255,7 @@
         },
         {
             "name": "symfony/polyfill-apcu",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-apcu.git",
@@ -3324,7 +3329,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -3400,7 +3405,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -4121,16 +4126,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.0",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "3170448f5769fe19f456173d833734e0ff1b84df"
+                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/3170448f5769fe19f456173d833734e0ff1b84df",
-                "reference": "3170448f5769fe19f456173d833734e0ff1b84df",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
+                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
                 "shasum": ""
             },
             "require": {
@@ -4169,7 +4174,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-07-20T20:05:34+00:00"
+            "time": "2020-08-15T11:14:08+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
