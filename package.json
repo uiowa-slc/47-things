@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "start": "cd vendor/md/bootstrap-project && npm install && gulp",
-    "build": "cd vendor/md/bootstrap-project && gulp build"
+    "build": "cd vendor/md/bootstrap-project && npm install && gulp build"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.0"
