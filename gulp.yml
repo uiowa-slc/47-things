@@ -6,7 +6,7 @@
 #Autoloads themes/[themename]/src/scripts/app.js after everything else, no need to add it here
 PATHS:
   projectName: "47-things"
-  theme: "47things"
+  theme: "bootstrap"
   javascript:
     - './node_modules/jquery/dist/jquery.js'
     # - './node_modules/popper.js/dist/umd/popper.min.js'
