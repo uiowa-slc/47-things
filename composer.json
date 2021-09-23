@@ -4,7 +4,8 @@
     "description": "47 Things Website",
     "require": {
         "php": ">=7.2.0",
-        "md/bootstrap-project": "dev-main"
+        "md/bootstrap-project": "dev-main",
+	"md/silverstripe-migration-tools": "dev-main"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
@@ -63,6 +64,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-maintenance-mode"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools"
         }
     ]
 }
